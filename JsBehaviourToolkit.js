@@ -390,9 +390,9 @@ if (typeof jQuery !== 'undefined') {
             JsBehaviourToolkit.applyBehaviour(window.document);
         }, true);
     } else if(window.attachEvent)  {
-        window.attachEvent("onLoad",function() {
+        window.onload = function() {
             JsBehaviourToolkit.applyBehaviour(window.document);
-        });
+        }
     }
 }
 
